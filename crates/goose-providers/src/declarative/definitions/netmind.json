@@ -1,0 +1,268 @@
+{
+  "name": "netmind",
+  "engine": "openai",
+  "display_name": "NetMind",
+  "description": "OpenAI-compatible access to models hosted by NetMind",
+  "api_key_env": "NETMIND_API_KEY",
+  "base_url": "https://api.netmind.ai/inference-api/v1/chat/completions",
+  "headers": {
+    "User-Agent": "goose"
+  },
+  "models": [
+    {
+      "name": "openai/gpt-6-astra",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.00001,
+      "output_token_cost": 0.00005,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-6-sol",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000002,
+      "output_token_cost": 0.00001,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-6-luna",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.0000001,
+      "output_token_cost": 0.0000005,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-6.1-sol",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000002,
+      "output_token_cost": 0.00001,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-5.6-sol",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000004,
+      "output_token_cost": 0.00002,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-5.6-terra",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000002,
+      "output_token_cost": 0.000012,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-5.6-luna",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.0000002,
+      "output_token_cost": 0.0000012,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-5.5",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000005,
+      "output_token_cost": 0.00003,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-5.4",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.0000025,
+      "output_token_cost": 0.000015,
+      "currency": "USD"
+    },
+    {
+      "name": "openai/gpt-5.4-mini",
+      "context_limit": 400000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.00000075,
+      "output_token_cost": 0.0000045,
+      "currency": "USD"
+    },
+    {
+      "name": "anthropic/claude-opus-5-5",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000004,
+      "output_token_cost": 0.00002,
+      "currency": "USD"
+    },
+    {
+      "name": "anthropic/claude-sonnet-5-5",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000002,
+      "output_token_cost": 0.00001,
+      "currency": "USD"
+    },
+    {
+      "name": "anthropic/claude-haiku-5-5",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.0000001,
+      "output_token_cost": 0.0000005,
+      "currency": "USD"
+    },
+    {
+      "name": "anthropic/claude-fable-5-1",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.00001,
+      "output_token_cost": 0.00005,
+      "currency": "USD"
+    },
+    {
+      "name": "anthropic/claude-sonnet-5",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.000002,
+      "output_token_cost": 0.00001,
+      "currency": "USD"
+    },
+    {
+      "name": "anthropic/claude-haiku-4-5",
+      "context_limit": 200000,
+      "max_tokens": 64000,
+      "input_token_cost": 0.000001,
+      "output_token_cost": 0.000005,
+      "currency": "USD"
+    },
+    {
+      "name": "deepseek-ai/DeepSeek-V4-Pro",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.00000132,
+      "output_token_cost": 0.00000396,
+      "currency": "USD"
+    },
+    {
+      "name": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "context_limit": 1000000,
+      "max_tokens": 384000,
+      "input_token_cost": 0.0000003,
+      "output_token_cost": 0.0000012,
+      "currency": "USD"
+    },
+    {
+      "name": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "context_limit": 1000000,
+      "max_tokens": 384000,
+      "input_token_cost": 0.00000044,
+      "output_token_cost": 0.00000132,
+      "currency": "USD"
+    },
+    {
+      "name": "Qwen/Qwen3.8-Max",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.000001644,
+      "output_token_cost": 0.000004932,
+      "currency": "USD"
+    },
+    {
+      "name": "Qwen/Qwen3.8-Flash",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.00000015,
+      "output_token_cost": 0.00000047,
+      "currency": "USD"
+    },
+    {
+      "name": "Qwen/Qwen3.7-Plus",
+      "context_limit": 1000000,
+      "max_tokens": 65536,
+      "input_token_cost": 0.000000274,
+      "output_token_cost": 0.000001096,
+      "currency": "USD"
+    },
+    {
+      "name": "zai-org/GLM-5.3",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.0000014,
+      "output_token_cost": 0.0000044,
+      "currency": "USD"
+    },
+    {
+      "name": "zai-org/GLM-5.3-Flash",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.00000015,
+      "output_token_cost": 0.0000005,
+      "currency": "USD"
+    },
+    {
+      "name": "zai-org/GLM-5.3-FlashX",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.00000037,
+      "output_token_cost": 0.00000125,
+      "currency": "USD"
+    },
+    {
+      "name": "google/gemini-3.8-flash",
+      "context_limit": 1000000,
+      "max_tokens": 65536,
+      "input_token_cost": 0.00000075,
+      "output_token_cost": 0.00000375,
+      "currency": "USD"
+    },
+    {
+      "name": "moonshotai/Kimi-K3",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.000003,
+      "output_token_cost": 0.000015,
+      "currency": "USD"
+    },
+    {
+      "name": "minimax/minimax-m3",
+      "context_limit": 1000000,
+      "max_tokens": 128000,
+      "input_token_cost": 0.0000003,
+      "output_token_cost": 0.0000012,
+      "currency": "USD"
+    },
+    {
+      "name": "x-ai/grok-4.7",
+      "context_limit": 500000,
+      "max_tokens": 450000,
+      "input_token_cost": 0.0000016,
+      "output_token_cost": 0.0000048,
+      "currency": "USD"
+    },
+    {
+      "name": "XiaomiMiMo/MiMo-V2.5-Pro",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.000000435,
+      "output_token_cost": 0.00000087,
+      "currency": "USD"
+    },
+    {
+      "name": "XiaomiMiMo/MiMo-V2.5",
+      "context_limit": 1000000,
+      "max_tokens": 131072,
+      "input_token_cost": 0.00000014,
+      "output_token_cost": 0.00000028,
+      "currency": "USD"
+    }
+  ],
+  "supports_streaming": true,
+  "setup": {
+    "category": "model",
+    "setup_method": "single_api_key",
+    "group": "additional",
+    "docs_url": "https://www.netmind.ai/modelsLibrary"
+  }
+}

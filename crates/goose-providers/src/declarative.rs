@@ -36,6 +36,7 @@ pub(crate) mod declarative_providers {
         mistral,
         moonshot,
         nearai,
+        netmind,
         novita,
         nvidia,
         ollama_cloud,
